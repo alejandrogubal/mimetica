@@ -1,1352 +1,961 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="MIMÉTICA — Dirección Audiovisual Estratégica. Alejandro González Ubal. Contenido cinematográfico para marcas, inmobiliarias y campañas digitales."/>
-<title>MIMÉTICA — Dirección Audiovisual Estratégica</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Haas+Grot+Text+R+Web:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet"/>
-<style>
-/* ============================================
-   RESET & BASE
-   ============================================ */
-*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior:smooth; font-size:16px; }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alejandro Ubal / Mimética — dirección audiovisual estratégica, contenido cinematográfico, postproducción y narrativa visual para marcas, proyectos inmobiliarios y comunicación digital." />
+  <meta name="author" content="Alejandro González Ubal" />
+  <meta name="theme-color" content="#090909" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mimeticaestudio.com/" />
 
-:root {
-  --black:      #090909;
-  --gray-900:   #111111;
-  --gray-800:   #1a1a1a;
-  --gray-700:   #252525;
-  --gray-500:   #555555;
-  --gray-400:   #888888;
-  --gray-200:   #c8c8c0;
-  --gray-100:   #e8e6df;
-  --warm:       #d4c5a9;
-  --warm-dim:   #a89880;
-  --white:      #f5f3ee;
-  --accent:     #c8b99a;
-  --serif:      'Cormorant Garamond', Georgia, serif;
-  --sans:       'Outfit', sans-serif;
-  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-in-out:cubic-bezier(0.65, 0, 0.35, 1);
-}
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CL" />
+  <meta property="og:title" content="Alejandro Ubal / Mimética — Dirección audiovisual estratégica" />
+  <meta property="og:description" content="Videos, piezas visuales y contenido cinematográfico que construyen percepción, identidad y confianza." />
+  <meta property="og:url" content="https://mimeticaestudio.com/" />
+  <meta property="og:site_name" content="Mimética" />
+  <meta property="og:image" content="https://mimeticaestudio.com/og-image.jpg" />
 
-body {
-  background: var(--black);
-  color: var(--white);
-  font-family: var(--sans);
-  font-weight: 300;
-  line-height: 1.7;
-  overflow-x: hidden;
-  cursor: none;
-}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alejandro Ubal / Mimética" />
+  <meta name="twitter:description" content="Dirección audiovisual estratégica para marcas, proyectos y personas que necesitan comunicar con intención." />
+  <meta name="twitter:image" content="https://mimeticaestudio.com/og-image.jpg" />
 
-/* CUSTOM CURSOR */
-.cursor {
-  position: fixed; z-index: 9999; pointer-events: none;
-  width: 8px; height: 8px; border-radius: 50%;
-  background: var(--white); mix-blend-mode: difference;
-  transform: translate(-50%, -50%);
-  transition: width 0.3s var(--ease-out), height 0.3s var(--ease-out), opacity 0.3s;
-}
-.cursor-ring {
-  position: fixed; z-index: 9998; pointer-events: none;
-  width: 36px; height: 36px; border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.35);
-  transform: translate(-50%, -50%);
-  transition: all 0.18s var(--ease-out);
-}
-body:hover .cursor { opacity:1; }
+  <title>Alejandro Ubal / Mimética — Dirección audiovisual estratégica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-/* GRAIN OVERLAY */
-body::before {
-  content:'';
-  position: fixed; inset:0; z-index:9990; pointer-events:none;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
-  opacity: 0.035;
-}
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    :root {
+      --black: #090909;
+      --ink: #0f0e0d;
+      --panel: #121211;
+      --panel-2: #181715;
+      --line: rgba(255,255,255,0.08);
+      --line-strong: rgba(212,197,169,0.22);
+      --muted: #8c8980;
+      --soft: #c9c4b8;
+      --white: #f5f2eb;
+      --accent: #c8b99a;
+      --accent-2: #e1d0ac;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+      --max: 1180px;
+    }
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+      cursor: none;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 9990;
+      pointer-events: none;
+      opacity: 0.035;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+    }
+    a, button, input, textarea, select { font: inherit; }
+    a { color: inherit; }
+    ::selection { background: rgba(200,185,154,0.35); color: var(--white); }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .skip-link {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      z-index: 10000;
+      transform: translateY(-150%);
+      background: var(--accent);
+      color: var(--black);
+      padding: 0.65rem 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .skip-link:focus { transform: translateY(0); }
 
-/* ============================================
-   NAV
-   ============================================ */
-nav {
-  position: fixed; top:0; left:0; right:0; z-index:1000;
-  display: flex; align-items:center; justify-content:space-between;
-  padding: 2rem 3.5rem;
-  transition: padding 0.5s var(--ease-out), background 0.5s;
-}
-nav.scrolled {
-  padding: 1.2rem 3.5rem;
-  background: rgba(9,9,9,0.92);
-  backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(255,255,255,0.04);
-}
-.nav-logo {
-  font-family: var(--serif);
-  font-weight: 300;
-  font-size: 1.25rem;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-  color: var(--white);
-  text-decoration: none;
-  cursor: none;
-}
-.nav-links {
-  display: flex; gap: 2.8rem; list-style: none;
-  align-items: center;
-}
-.nav-links a {
-  color: var(--gray-400);
-  text-decoration: none;
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  font-weight: 400;
-  transition: color 0.3s;
-  cursor: none;
-}
-.nav-links a:hover { color: var(--white); }
-.nav-cta {
-  font-size: 0.7rem !important;
-  letter-spacing: 0.22em !important;
-  color: var(--accent) !important;
-  border: 1px solid rgba(200,185,154,0.3);
-  padding: 0.6rem 1.4rem;
-  border-radius: 1px;
-  transition: background 0.3s, color 0.3s, border-color 0.3s !important;
-}
-.nav-cta:hover {
-  background: var(--accent) !important;
-  color: var(--black) !important;
-}
+    .cursor, .cursor-ring {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .cursor {
+      z-index: 9999;
+      width: 8px;
+      height: 8px;
+      background: var(--white);
+      mix-blend-mode: difference;
+      transition: width 0.25s var(--ease), height 0.25s var(--ease), opacity 0.25s;
+    }
+    .cursor-ring {
+      z-index: 9998;
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(255,255,255,0.34);
+      transition: width 0.25s var(--ease), height 0.25s var(--ease), border-color 0.25s var(--ease);
+    }
 
-/* ============================================
-   HERO
-   ============================================ */
-#hero {
-  position: relative;
-  height: 100vh; min-height: 680px;
-  display: flex; align-items: center; justify-content: center;
-  overflow: hidden;
-}
-.hero-video-wrap {
-  position: absolute; inset:0; overflow:hidden;
-}
-.hero-video-wrap video {
-  width:100%; height:100%; object-fit:cover;
-  filter: brightness(0.35) contrast(1.1);
-}
-/* Cinematic letter-box bars */
-.hero-video-wrap::before,
-.hero-video-wrap::after {
-  content:''; position:absolute; left:0; right:0;
-  background:var(--black); z-index:2; height:10vh;
-}
-.hero-video-wrap::before { top:0; }
-.hero-video-wrap::after  { bottom:0; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0.9rem 1.6rem;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 1px;
+      color: var(--white);
+      background: transparent;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.7rem;
+      font-weight: 500;
+      cursor: none;
+      transition: transform 0.25s var(--ease), color 0.25s, background 0.25s, border-color 0.25s;
+    }
+    .btn:hover, .btn:focus-visible { border-color: rgba(255,255,255,0.52); background: rgba(255,255,255,0.07); transform: translateY(-1px); }
+    .btn-primary { background: var(--accent); border-color: var(--accent); color: var(--black); }
+    .btn-primary:hover, .btn-primary:focus-visible { background: var(--accent-2); color: var(--black); border-color: var(--accent-2); }
+    .btn-link { border-color: var(--line-strong); color: var(--accent); }
 
-.hero-overlay {
-  position:absolute; inset:0; z-index:3;
-  background: linear-gradient(to bottom,
-    transparent 40%,
-    rgba(9,9,9,0.7) 80%,
-    var(--black) 100%);
-}
-.hero-content {
-  position: relative; z-index:4;
-  text-align: center;
-  padding: 0 2rem;
-}
-.hero-eyebrow {
-  font-size: 0.68rem;
-  letter-spacing: 0.4em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 2rem;
-  opacity:0; animation: fadeUp 1s var(--ease-out) 0.3s forwards;
-}
-.hero-title {
-  font-family: var(--serif);
-  font-size: clamp(4.5rem, 12vw, 11rem);
-  font-weight: 300;
-  letter-spacing: 0.2em;
-  line-height: 0.9;
-  text-transform: uppercase;
-  color: var(--white);
-  opacity:0; animation: fadeUp 1.2s var(--ease-out) 0.5s forwards;
-}
-.hero-subtitle {
-  margin-top: 1.8rem;
-  font-size: 0.8rem;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--gray-400);
-  opacity:0; animation: fadeUp 1s var(--ease-out) 0.9s forwards;
-}
-.hero-tagline {
-  margin-top: 3rem;
-  font-size: 1rem;
-  color: var(--gray-200);
-  font-weight: 300;
-  max-width: 520px;
-  margin-left:auto; margin-right:auto;
-  line-height: 1.8;
-  opacity:0; animation: fadeUp 1s var(--ease-out) 1.1s forwards;
-}
-.hero-actions {
-  margin-top: 3.5rem;
-  display:flex; gap:1.5rem; justify-content:center; flex-wrap:wrap;
-  opacity:0; animation: fadeUp 1s var(--ease-out) 1.3s forwards;
-}
-.btn-outline {
-  font-size: 0.7rem; letter-spacing: 0.22em; text-transform:uppercase;
-  padding: 0.9rem 2.2rem;
-  border: 1px solid rgba(255,255,255,0.25);
-  color: var(--white); text-decoration:none; cursor:none;
-  transition: background 0.3s, border-color 0.3s, color 0.3s;
-  border-radius: 1px;
-}
-.btn-outline:hover { background: rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.5); }
-.btn-accent {
-  font-size: 0.7rem; letter-spacing: 0.22em; text-transform:uppercase;
-  padding: 0.9rem 2.2rem;
-  background: var(--accent); color:var(--black);
-  text-decoration:none; cursor:none;
-  transition: background 0.3s, transform 0.2s;
-  border-radius: 1px; border:1px solid transparent;
-  font-weight: 400;
-}
-.btn-accent:hover { background: var(--warm); }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 3.5rem;
+      transition: padding 0.45s var(--ease), background 0.45s, border-color 0.45s;
+    }
+    nav.scrolled {
+      padding: 1rem 3.5rem;
+      background: rgba(9,9,9,0.92);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      backdrop-filter: blur(18px);
+    }
+    .nav-logo {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 300;
+      cursor: none;
+    }
+    .nav-links { display: flex; align-items: center; gap: 2.35rem; list-style: none; }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.19em;
+      font-size: 0.7rem;
+      font-weight: 400;
+      cursor: none;
+      transition: color 0.25s;
+    }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--white); }
+    .nav-links .nav-cta { color: var(--accent); border: 1px solid var(--line-strong); padding: 0.55rem 1.05rem; }
+    .nav-toggle { display: none; flex-direction: column; gap: 5px; background: transparent; border: 0; padding: 0.4rem; cursor: pointer; }
+    .nav-toggle span { width: 24px; height: 1px; background: var(--white); display: block; }
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      background: rgba(9,9,9,0.98);
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.6rem;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-family: var(--serif);
+      color: var(--white);
+      text-decoration: none;
+      font-size: clamp(2rem, 9vw, 4rem);
+      font-weight: 300;
+    }
+    .mobile-close { position: absolute; top: 1.6rem; right: 1.6rem; background: transparent; border: 0; color: var(--white); font-size: 1.6rem; cursor: pointer; }
 
-.hero-scroll-hint {
-  position:absolute; bottom:4vh; left:50%; transform:translateX(-50%);
-  z-index:5; display:flex; flex-direction:column; align-items:center; gap:0.6rem;
-  opacity:0; animation: fadeIn 1s ease 2s forwards;
-}
-.hero-scroll-hint span {
-  font-size:0.6rem; letter-spacing:0.3em; text-transform:uppercase;
-  color:var(--gray-500);
-}
-.scroll-line {
-  width:1px; height:50px;
-  background: linear-gradient(to bottom, var(--gray-500), transparent);
-  animation: scrollLine 2s ease-in-out infinite;
-}
-@keyframes scrollLine {
-  0%   { transform:scaleY(0); transform-origin:top; }
-  50%  { transform:scaleY(1); transform-origin:top; }
-  51%  { transform:scaleY(1); transform-origin:bottom; }
-  100% { transform:scaleY(0); transform-origin:bottom; }
-}
+    .section { padding: 8rem 3.5rem; }
+    .section-inner { max-width: var(--max); margin: 0 auto; }
+    .section-kicker {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2.2rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.32em;
+      font-size: 0.63rem;
+      font-weight: 500;
+    }
+    .section-kicker::before { content: ''; width: 2.6rem; height: 1px; background: var(--accent); }
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(2.35rem, 5vw, 4.8rem);
+      font-weight: 300;
+      line-height: 1.05;
+      letter-spacing: 0.01em;
+    }
+    .section-title em { color: var(--accent); font-style: italic; }
+    .lead { color: var(--soft); font-size: clamp(1.02rem, 1.5vw, 1.18rem); line-height: 2; }
+    .muted { color: var(--muted); }
 
-/* ============================================
-   SECTION COMMON
-   ============================================ */
-.section { padding: 8rem 3.5rem; }
-.section-inner { max-width: 1200px; margin:0 auto; }
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 8rem 2rem 5rem;
+    }
+    .hero-bg { position: absolute; inset: 0; overflow: hidden; }
+    .hero-bg::before,
+    .hero-bg::after { content: ''; position: absolute; left: 0; right: 0; height: 9vh; background: var(--black); z-index: 2; }
+    .hero-bg::before { top: 0; }
+    .hero-bg::after { bottom: 0; }
+    .hero-gradient {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 74% 28%, rgba(200,185,154,0.13), transparent 32%),
+        radial-gradient(circle at 20% 70%, rgba(118,83,45,0.12), transparent 34%),
+        linear-gradient(180deg, rgba(9,9,9,0.2) 0%, rgba(9,9,9,0.72) 78%, var(--black) 100%);
+      z-index: 3;
+    }
+    .hero-bg video { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.32) contrast(1.1) saturate(0.78); }
+    .hero-fallback {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(115deg, rgba(200,185,154,0.08), transparent 35%),
+        linear-gradient(225deg, rgba(255,255,255,0.045), transparent 45%),
+        #0b0b0a;
+    }
+    .hero-content { position: relative; z-index: 4; text-align: center; max-width: 980px; margin: 0 auto; }
+    .hero-eyebrow {
+      color: var(--accent);
+      font-size: 0.68rem;
+      letter-spacing: 0.36em;
+      text-transform: uppercase;
+      margin-bottom: 1.4rem;
+      opacity: 0;
+      animation: fadeUp 0.9s var(--ease) 0.2s forwards;
+    }
+    .hero-title {
+      font-family: var(--serif);
+      font-size: clamp(4.3rem, 11vw, 10rem);
+      line-height: 0.9;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 300;
+      opacity: 0;
+      animation: fadeUp 1s var(--ease) 0.38s forwards;
+    }
+    .hero-subtitle {
+      max-width: 760px;
+      margin: 2.2rem auto 0;
+      font-family: var(--serif);
+      font-size: clamp(1.6rem, 3vw, 2.55rem);
+      line-height: 1.24;
+      font-weight: 300;
+      color: var(--white);
+      opacity: 0;
+      animation: fadeUp 1s var(--ease) 0.56s forwards;
+    }
+    .hero-tagline {
+      max-width: 620px;
+      margin: 1.35rem auto 0;
+      color: var(--soft);
+      font-size: 1.02rem;
+      line-height: 1.85;
+      opacity: 0;
+      animation: fadeUp 1s var(--ease) 0.72s forwards;
+    }
+    .hero-actions { margin-top: 2.8rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; opacity: 0; animation: fadeUp 1s var(--ease) 0.9s forwards; }
+    .hero-scroll { position: absolute; bottom: 4vh; left: 50%; transform: translateX(-50%); z-index: 4; color: rgba(255,255,255,0.34); font-size: 0.58rem; letter-spacing: 0.3em; text-transform: uppercase; }
 
-.label {
-  font-size: 0.62rem;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 3rem;
-  display:flex; align-items:center; gap:1rem;
-}
-.label::before {
-  content:''; width:2.5rem; height:1px;
-  background: var(--accent); flex-shrink:0;
-}
+    #manifesto { background: linear-gradient(180deg, var(--black), var(--ink)); border-top: 1px solid rgba(255,255,255,0.035); }
+    .manifesto-box { max-width: 920px; margin: 0 auto; text-align: center; }
+    .manifesto-box .section-kicker { justify-content: center; }
+    .manifesto-box .section-kicker::after { content: ''; width: 2.6rem; height: 1px; background: var(--accent); }
+    .manifesto-box .section-kicker::before { display: none; }
+    .manifesto-text { margin-top: 2.4rem; }
 
-h2.section-title {
-  font-family: var(--serif);
-  font-size: clamp(2.4rem, 5vw, 4.5rem);
-  font-weight: 300;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  color: var(--white);
-}
-h2.section-title em {
-  font-style: italic;
-  color: var(--accent);
-}
+    #about { background: var(--panel); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .about-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 6rem; align-items: center; }
+    .visual-card {
+      position: relative;
+      min-height: 560px;
+      background:
+        linear-gradient(160deg, rgba(200,185,154,0.14), transparent 36%),
+        linear-gradient(340deg, rgba(255,255,255,0.05), transparent 42%),
+        #151310;
+      border: 1px solid var(--line);
+      overflow: hidden;
+    }
+    .visual-card::before {
+      content: 'M';
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      font-family: var(--serif);
+      font-size: clamp(9rem, 20vw, 17rem);
+      color: rgba(200,185,154,0.08);
+      letter-spacing: 0.16em;
+      transform: translateX(0.08em);
+    }
+    .visual-card-caption {
+      position: absolute;
+      left: 1.4rem;
+      bottom: 1.4rem;
+      right: 1.4rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      color: rgba(255,255,255,0.46);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.62rem;
+    }
+    .about-copy { display: grid; gap: 2rem; }
+    .bio-points { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); margin-top: 1rem; }
+    .bio-point { padding: 1.5rem; border-right: 1px solid var(--line); }
+    .bio-point:last-child { border-right: 0; }
+    .bio-num { font-family: var(--serif); font-size: 2.6rem; line-height: 1; color: var(--white); }
+    .bio-label { margin-top: 0.6rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.62rem; }
 
-/* fade-in on scroll */
-.reveal {
-  opacity:0; transform:translateY(32px);
-  transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out);
-}
-.reveal.visible { opacity:1; transform:translateY(0); }
+    #services { background: var(--black); }
+    .split-header { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: end; margin-bottom: 5.5rem; }
+    .service-list { border-top: 1px solid var(--line); }
+    .service-item {
+      display: grid;
+      grid-template-columns: 0.42fr 1.35fr 1.8fr auto;
+      gap: 2rem;
+      padding: 2.3rem 0;
+      border-bottom: 1px solid var(--line);
+      align-items: start;
+    }
+    .service-number { color: rgba(255,255,255,0.28); letter-spacing: 0.25em; font-size: 0.62rem; padding-top: 0.4rem; }
+    .service-name { font-family: var(--serif); font-size: clamp(1.5rem, 2.2vw, 2.1rem); line-height: 1.12; font-weight: 300; }
+    .service-desc { color: var(--muted); font-size: 0.95rem; line-height: 1.9; }
+    .service-arrow { color: var(--accent); font-size: 1.05rem; transition: transform 0.25s var(--ease); }
+    .service-item:hover .service-arrow { transform: translate(4px,-4px); }
 
-/* ============================================
-   SHOWREEL
-   ============================================ */
-#showreel {
-  padding: 0 3.5rem 8rem;
-}
-.reel-wrap {
-  max-width: 1200px; margin:0 auto;
-}
-.reel-label {
-  display:flex; align-items:center; justify-content:space-between;
-  margin-bottom: 1.8rem;
-}
-.reel-label .label { margin-bottom:0; }
-.reel-label span {
-  font-size:0.68rem; letter-spacing:0.2em; text-transform:uppercase;
-  color:var(--gray-500);
-}
-.reel-player {
-  position:relative; width:100%; aspect-ratio:16/9;
-  background:var(--gray-900);
-  overflow:hidden;
-  cursor:none;
-}
-.reel-player iframe {
-  position:absolute; inset:0; width:100%; height:100%; border:none;
-}
-.reel-placeholder {
-  position:absolute; inset:0;
-  display:flex; flex-direction:column; align-items:center; justify-content:center;
-  gap:1.5rem; cursor:none;
-  background:var(--gray-900);
-}
-.play-circle {
-  width:70px; height:70px; border-radius:50%;
-  border:1px solid rgba(255,255,255,0.25);
-  display:flex; align-items:center; justify-content:center;
-  transition: border-color 0.3s, transform 0.3s;
-}
-.reel-placeholder:hover .play-circle {
-  border-color:var(--accent); transform:scale(1.08);
-}
-.play-circle svg { fill:var(--white); width:18px; margin-left:3px; }
-.reel-placeholder p {
-  font-size:0.68rem; letter-spacing:0.25em; text-transform:uppercase;
-  color:var(--gray-500);
-}
+    #experience { background: var(--panel); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .experience-tags { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2.7rem; }
+    .tag {
+      display: inline-flex;
+      padding: 0.55rem 0.95rem;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--soft);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.66rem;
+    }
+    .portfolio-note {
+      margin: 4.5rem 0 2rem;
+      max-width: 850px;
+      color: var(--soft);
+      font-size: 1.02rem;
+      line-height: 1.9;
+      border-left: 1px solid var(--accent);
+      padding-left: 1.6rem;
+    }
+    .project-list { border-top: 1px solid var(--line); }
+    .project-item {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1.25fr 0.4fr auto;
+      gap: 1.4rem;
+      padding: 1.55rem 0;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      text-decoration: none;
+      cursor: none;
+      transition: color 0.25s, border-color 0.25s;
+    }
+    .project-item:hover { border-bottom-color: var(--line-strong); }
+    .project-name { font-family: var(--serif); font-size: 1.45rem; font-weight: 300; line-height: 1.2; }
+    .project-meta, .project-role, .project-year { color: var(--muted); font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; }
+    .project-link { color: var(--accent); font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; white-space: nowrap; }
 
-/* ============================================
-   ABOUT MIMETICA
-   ============================================ */
-#about {
-  background: var(--gray-900);
-  border-top: 1px solid rgba(255,255,255,0.04);
-  border-bottom: 1px solid rgba(255,255,255,0.04);
-}
-.about-grid {
-  display:grid; grid-template-columns:1fr 1fr;
-  gap:7rem; align-items:center;
-}
-.about-image-col {
-  position:relative;
-}
-.about-img-frame {
-  width:100%; aspect-ratio:3/4;
-  background:var(--gray-800);
-  position:relative; overflow:hidden;
-}
-.about-img-frame img {
-  width:100%; height:100%; object-fit:cover;
-  filter: brightness(0.75) contrast(1.05) grayscale(15%);
-  transition:transform 8s var(--ease-out);
-}
-.about-img-frame:hover img { transform:scale(1.04); }
-.about-img-caption {
-  position:absolute; bottom:-1px; right:-1px;
-  background:var(--black);
-  padding:1rem 1.5rem;
-  font-size:0.62rem; letter-spacing:0.2em; text-transform:uppercase;
-  color:var(--gray-500);
-  border-top:1px solid rgba(255,255,255,0.06);
-  border-left:1px solid rgba(255,255,255,0.06);
-}
-.about-text-col {}
-.about-body {
-  font-size: 1.1rem;
-  color: var(--gray-200);
-  line-height: 2;
-  font-weight:300;
-  margin-top:2rem;
-}
-.about-quote {
-  margin-top: 3rem;
-  padding-left: 2rem;
-  border-left: 1px solid var(--accent);
-  font-family: var(--serif);
-  font-size: 1.5rem;
-  font-weight:300;
-  font-style:italic;
-  color: var(--accent);
-  line-height: 1.6;
-}
+    #book { background: radial-gradient(circle at 78% 28%, rgba(200,185,154,0.12), transparent 30%), var(--black); }
+    .book-panel {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 5rem;
+      align-items: center;
+      border: 1px solid var(--line);
+      background: linear-gradient(135deg, rgba(255,255,255,0.035), rgba(255,255,255,0.01));
+      padding: clamp(2rem, 5vw, 4.5rem);
+    }
+    .book-cover {
+      min-height: 440px;
+      border: 1px solid var(--line-strong);
+      background:
+        linear-gradient(150deg, rgba(200,185,154,0.18), transparent 34%),
+        linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.08)),
+        #15120f;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2rem;
+    }
+    .book-cover small { color: var(--accent); text-transform: uppercase; letter-spacing: 0.26em; font-size: 0.58rem; }
+    .book-cover strong { font-family: var(--serif); font-size: clamp(2.5rem, 5vw, 4.2rem); line-height: 0.95; font-weight: 300; }
+    .book-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.5rem; }
 
-/* ============================================
-   ALEJANDRO
-   ============================================ */
-#alejandro { }
-.ale-grid {
-  display:grid; grid-template-columns:1fr 2fr;
-  gap:7rem; align-items:start;
-}
-.ale-photo-wrap {
-  position:sticky; top:120px;
-}
-.ale-photo {
-  width:100%; aspect-ratio:2/3;
-  background:var(--gray-800);
-  overflow:hidden;
-}
-.ale-photo img {
-  width:100%; height:100%; object-fit:cover;
-  filter: brightness(0.8) contrast(1.05) grayscale(10%);
-  transition:transform 6s var(--ease-out);
-}
-.ale-photo:hover img { transform:scale(1.04); }
-.ale-name {
-  margin-top:1.5rem;
-  font-family:var(--serif);
-  font-size:1.1rem; font-weight:300;
-  letter-spacing:0.05em;
-  color:var(--gray-200);
-}
-.ale-role {
-  margin-top:0.4rem;
-  font-size:0.68rem; letter-spacing:0.22em;
-  text-transform:uppercase; color:var(--gray-500);
-}
-.ale-text { }
-.ale-body {
-  font-size:1.05rem; color:var(--gray-200);
-  line-height:2; font-weight:300; margin-top:2rem;
-}
-.ale-stats {
-  margin-top:4rem;
-  display:grid; grid-template-columns:1fr 1fr 1fr;
-  gap:0; border:1px solid rgba(255,255,255,0.06);
-}
-.stat-item {
-  padding:2rem 1.8rem;
-  border-right:1px solid rgba(255,255,255,0.06);
-}
-.stat-item:last-child { border-right:none; }
-.stat-num {
-  font-family:var(--serif);
-  font-size:3.5rem; font-weight:300;
-  color:var(--white); line-height:1;
-}
-.stat-label {
-  margin-top:0.5rem;
-  font-size:0.65rem; letter-spacing:0.22em;
-  text-transform:uppercase; color:var(--gray-500);
-}
-.ale-clients {
-  margin-top:4rem;
-}
-.ale-clients-label {
-  font-size:0.62rem; letter-spacing:0.3em; text-transform:uppercase;
-  color:var(--gray-500); margin-bottom:1.5rem;
-}
-.client-tags {
-  display:flex; flex-wrap:wrap; gap:0.8rem;
-}
-.client-tag {
-  font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase;
-  padding:0.5rem 1.2rem;
-  border:1px solid rgba(255,255,255,0.1);
-  color:var(--gray-400);
-  transition:border-color 0.3s, color 0.3s;
-}
-.client-tag:hover { border-color:var(--accent); color:var(--accent); }
+    #contact { background: var(--panel); border-top: 1px solid var(--line); }
+    .contact-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 6rem; align-items: start; }
+    .contact-channels { margin-top: 3rem; border-top: 1px solid var(--line); }
+    .channel {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--line);
+      color: var(--white);
+      text-decoration: none;
+      cursor: none;
+    }
+    .channel small { display: block; color: var(--muted); text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.62rem; margin-bottom: 0.25rem; }
+    .channel span { transition: color 0.25s; }
+    .channel:hover span { color: var(--accent); }
+    .contact-form { display: grid; gap: 1.2rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.55rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.62rem;
+      font-weight: 400;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid rgba(255,255,255,0.16);
+      border-radius: 0;
+      background: transparent;
+      color: var(--white);
+      padding: 0.75rem 0;
+      outline: none;
+      cursor: none;
+      transition: border-color 0.25s;
+      appearance: none;
+    }
+    .form-group textarea { min-height: 118px; resize: vertical; }
+    .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(255,255,255,0.26); }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-bottom-color: var(--accent); }
+    .form-group select option { background: var(--panel); color: var(--white); }
+    .form-footnote { color: var(--muted); font-size: 0.72rem; line-height: 1.7; }
+    .form-note { min-height: 1.5rem; color: var(--accent); font-size: 0.78rem; }
 
-/* ============================================
-   SERVICIOS
-   ============================================ */
-#servicios {
-  background: var(--gray-900);
-  border-top:1px solid rgba(255,255,255,0.04);
-  border-bottom:1px solid rgba(255,255,255,0.04);
-}
-.servicios-header {
-  display:grid; grid-template-columns:1fr 1fr;
-  gap:5rem; margin-bottom:6rem; align-items:end;
-}
-.servicios-intro {
-  font-size:1rem; color:var(--gray-400); line-height:1.9;
-  margin-top:2rem;
-}
-.services-list { }
-.service-item {
-  border-top:1px solid rgba(255,255,255,0.06);
-  padding:2.5rem 0;
-  display:grid; grid-template-columns:2fr 3fr auto;
-  gap:3rem; align-items:start;
-  transition: background 0.3s;
-  cursor:none;
-}
-.service-item:last-child { border-bottom:1px solid rgba(255,255,255,0.06); }
-.service-item:hover { }
-.service-num {
-  font-size:0.6rem; letter-spacing:0.25em; color:var(--gray-600, #444);
-  padding-top:0.2rem;
-}
-.service-name {
-  font-family:var(--serif);
-  font-size:1.6rem; font-weight:300;
-  color:var(--white); line-height:1.2;
-  transition:color 0.3s;
-}
-.service-item:hover .service-name { color:var(--accent); }
-.service-desc {
-  font-size:0.88rem; color:var(--gray-400);
-  line-height:1.8; margin-top:0.8rem;
-}
-.service-arrow {
-  font-size:1.2rem; color:var(--gray-600, #444);
-  padding-top:0.2rem; transition:transform 0.3s, color 0.3s;
-}
-.service-item:hover .service-arrow {
-  transform:translate(4px,-4px); color:var(--accent);
-}
+    #final-cta { text-align: center; background: linear-gradient(180deg, var(--panel), var(--black)); }
+    .cta-inner { max-width: 880px; margin: 0 auto; }
+    .cta-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; margin-top: 2.5rem; }
 
-/* ============================================
-   PROYECTOS
-   ============================================ */
-#proyectos {}
-.projects-header {
-  display:flex; align-items:flex-end; justify-content:space-between;
-  margin-bottom:4rem; flex-wrap:wrap; gap:2rem;
-}
-.projects-grid {
-  display:grid; gap:1.5rem;
-}
-.project-row {
-  display:grid; grid-template-columns:1fr 1fr;
-  gap:1.5rem;
-}
-.project-row.wide { grid-template-columns:2fr 1fr; }
-.project-card {
-  position:relative; overflow:hidden;
-  background:var(--gray-900);
-  cursor:none;
-  group:hover;
-}
-.project-card.tall { aspect-ratio:3/4; }
-.project-card.wide { aspect-ratio:16/7; }
-.project-card.sq   { aspect-ratio:1/1; }
-.proj-bg {
-  position:absolute; inset:0;
-  background:var(--gray-800);
-  transition:transform 0.7s var(--ease-out);
-}
-.project-card:hover .proj-bg { transform:scale(1.04); }
-.proj-overlay {
-  position:absolute; inset:0;
-  background:linear-gradient(to top, rgba(9,9,9,0.85) 0%, transparent 60%);
-  opacity:0; transition:opacity 0.4s;
-}
-.project-card:hover .proj-overlay { opacity:1; }
-.proj-info {
-  position:absolute; bottom:0; left:0; right:0;
-  padding:2rem;
-  transform:translateY(8px); opacity:0;
-  transition:transform 0.4s var(--ease-out), opacity 0.4s;
-}
-.project-card:hover .proj-info { transform:translateY(0); opacity:1; }
-.proj-client {
-  font-size:0.6rem; letter-spacing:0.3em; text-transform:uppercase;
-  color:var(--accent); margin-bottom:0.5rem;
-}
-.proj-title {
-  font-family:var(--serif);
-  font-size:1.4rem; font-weight:300;
-  color:var(--white);
-}
-.proj-type {
-  margin-top:0.4rem;
-  font-size:0.65rem; letter-spacing:0.18em; text-transform:uppercase;
-  color:var(--gray-400);
-}
-/* placeholder colored backgrounds for projects */
-.proj-p1 { background:linear-gradient(135deg,#1a1510,#0d0d0f); }
-.proj-p2 { background:linear-gradient(135deg,#0f1510,#0d0d0f); }
-.proj-p3 { background:linear-gradient(135deg,#10121a,#0d0d0f); }
-.proj-p4 { background:linear-gradient(135deg,#1a1210,#0d0d0f); }
-.proj-p5 { background:linear-gradient(135deg,#141010,#0d0d0f); }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding: 3rem 3.5rem;
+      border-top: 1px solid var(--line);
+    }
+    .footer-logo { font-family: var(--serif); letter-spacing: 0.3em; text-transform: uppercase; color: var(--soft); }
+    .footer-copy { color: rgba(255,255,255,0.32); text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.62rem; }
+    .footer-links { display: flex; gap: 1.4rem; list-style: none; }
+    .footer-links a { color: var(--muted); text-decoration: none; text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.62rem; cursor: none; }
+    .footer-links a:hover { color: var(--white); }
 
-.proj-placeholder-text {
-  position:absolute; inset:0; display:flex;
-  align-items:center; justify-content:center; flex-direction:column; gap:0.6rem;
-  color:rgba(255,255,255,0.08);
-  font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase;
-}
-.proj-placeholder-icon { font-size:2rem; opacity:0.3; }
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.85s var(--ease), transform 0.85s var(--ease); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: translateY(0); } }
 
-/* ============================================
-   FILOSOFIA
-   ============================================ */
-#filosofia {
-  background:var(--gray-900);
-  border-top:1px solid rgba(255,255,255,0.04);
-  text-align:center;
-}
-.filo-inner { max-width:820px; margin:0 auto; }
-.filo-main {
-  font-family:var(--serif);
-  font-size:clamp(1.8rem,4vw,3.2rem);
-  font-weight:300;
-  line-height:1.5;
-  color:var(--white);
-  margin-top:3rem;
-}
-.filo-main em { font-style:italic; color:var(--accent); }
-.filo-sub {
-  margin-top:3rem;
-  font-size:0.95rem; color:var(--gray-400);
-  line-height:2;
-}
-
-/* ============================================
-   CONTACT
-   ============================================ */
-#contacto {}
-.contact-grid {
-  display:grid; grid-template-columns:1fr 1fr;
-  gap:8rem; align-items:start;
-}
-.contact-left h2 {
-  font-family:var(--serif);
-  font-size:clamp(2rem,4vw,3.8rem);
-  font-weight:300; line-height:1.15;
-  margin-top:1rem;
-}
-.contact-left h2 em { font-style:italic; color:var(--accent); }
-.contact-channels {
-  margin-top:4rem; display:flex; flex-direction:column; gap:0;
-}
-.channel-item {
-  display:flex; align-items:center; justify-content:space-between;
-  padding:1.5rem 0;
-  border-bottom:1px solid rgba(255,255,255,0.06);
-  text-decoration:none; cursor:none;
-  transition:color 0.3s;
-}
-.channel-item:first-child { border-top:1px solid rgba(255,255,255,0.06); }
-.channel-name {
-  font-size:0.68rem; letter-spacing:0.2em; text-transform:uppercase;
-  color:var(--gray-500); margin-bottom:0.3rem;
-}
-.channel-val {
-  font-size:1rem; color:var(--white); transition:color 0.3s;
-}
-.channel-item:hover .channel-val { color:var(--accent); }
-.channel-arrow {
-  font-size:1rem; color:var(--gray-600, #444);
-  transition:transform 0.3s, color 0.3s;
-}
-.channel-item:hover .channel-arrow { transform:translate(4px,-4px); color:var(--accent); }
-
-/* FORM */
-.contact-form {}
-.form-group { margin-bottom:2rem; }
-.form-group label {
-  display:block;
-  font-size:0.62rem; letter-spacing:0.25em; text-transform:uppercase;
-  color:var(--gray-500); margin-bottom:0.8rem;
-}
-.form-group input,
-.form-group textarea,
-.form-group select {
-  width:100%; background:transparent;
-  border:none; border-bottom:1px solid rgba(255,255,255,0.12);
-  color:var(--white); font-family:var(--sans); font-size:0.95rem; font-weight:300;
-  padding:0.8rem 0;
-  outline:none; transition:border-color 0.3s;
-  appearance:none;
-}
-.form-group select option { background:var(--gray-900); }
-.form-group input::placeholder,
-.form-group textarea::placeholder { color:var(--gray-600,#3a3a3a); }
-.form-group input:focus,
-.form-group textarea:focus,
-.form-group select:focus {
-  border-bottom-color:var(--accent);
-}
-.form-group textarea { resize:none; height:100px; }
-.btn-submit {
-  width:100%; padding:1.2rem;
-  background:transparent; border:1px solid rgba(255,255,255,0.2);
-  color:var(--white); font-family:var(--sans); font-size:0.72rem;
-  letter-spacing:0.25em; text-transform:uppercase; font-weight:400;
-  cursor:none; transition:background 0.3s, border-color 0.3s;
-}
-.btn-submit:hover { background:var(--accent); border-color:var(--accent); color:var(--black); }
-.form-note {
-  margin-top:1rem; font-size:0.68rem; color:var(--gray-500);
-  text-align:center; letter-spacing:0.08em;
-}
-
-/* ============================================
-   FOOTER
-   ============================================ */
-footer {
-  border-top:1px solid rgba(255,255,255,0.04);
-  padding:3rem 3.5rem;
-  display:flex; align-items:center; justify-content:space-between;
-  flex-wrap:wrap; gap:2rem;
-}
-.footer-logo {
-  font-family:var(--serif);
-  font-size:1rem; letter-spacing:0.35em; text-transform:uppercase;
-  color:var(--gray-400); font-weight:300;
-}
-.footer-copy {
-  font-size:0.65rem; letter-spacing:0.15em;
-  color:var(--gray-600,#3a3a3a);
-  text-transform:uppercase;
-}
-.footer-links {
-  display:flex; gap:2rem; list-style:none;
-}
-.footer-links a {
-  font-size:0.65rem; letter-spacing:0.18em; text-transform:uppercase;
-  color:var(--gray-500); text-decoration:none; cursor:none;
-  transition:color 0.3s;
-}
-.footer-links a:hover { color:var(--white); }
-
-/* ============================================
-   ANIMATIONS
-   ============================================ */
-@keyframes fadeUp {
-  from { opacity:0; transform:translateY(30px); }
-  to   { opacity:1; transform:translateY(0); }
-}
-@keyframes fadeIn {
-  from { opacity:0; }
-  to   { opacity:1; }
-}
-
-/* ============================================
-   MOBILE NAV TOGGLE
-   ============================================ */
-.nav-toggle {
-  display:none; flex-direction:column; gap:5px;
-  background:none; border:none; cursor:pointer; padding:4px;
-}
-.nav-toggle span {
-  display:block; width:24px; height:1px;
-  background:var(--white); transition:transform 0.3s;
-}
-.mobile-menu {
-  display:none; position:fixed; inset:0; z-index:999;
-  background:var(--black); flex-direction:column;
-  align-items:center; justify-content:center; gap:2.5rem;
-}
-.mobile-menu.open { display:flex; }
-.mobile-menu a {
-  font-family:var(--serif); font-size:2.5rem; font-weight:300;
-  color:var(--white); text-decoration:none; letter-spacing:0.05em;
-}
-.mobile-menu a:hover { color:var(--accent); }
-.mobile-close {
-  position:absolute; top:2rem; right:2.5rem;
-  background:none; border:none; color:var(--white);
-  font-size:1.5rem; cursor:pointer;
-}
-
-/* ============================================
-   RESPONSIVE
-   ============================================ */
-@media(max-width:1000px) {
-  .about-grid,
-  .ale-grid,
-  .servicios-header,
-  .contact-grid { grid-template-columns:1fr; gap:4rem; }
-  .ale-photo-wrap { position:static; }
-  .service-item { grid-template-columns:1fr 2fr; }
-  .service-num { display:none; }
-  .services-list { margin-top:0; }
-  .project-row { grid-template-columns:1fr; }
-  .project-row.wide { grid-template-columns:1fr; }
-  .project-card.tall,
-  .project-card.wide,
-  .project-card.sq { aspect-ratio:16/9; }
-}
-@media(max-width:768px) {
-  nav { padding:1.5rem 1.5rem; }
-  nav.scrolled { padding:1rem 1.5rem; }
-  .nav-links { display:none; }
-  .nav-toggle { display:flex; }
-  .section { padding:5rem 1.5rem; }
-  #showreel { padding:0 1.5rem 5rem; }
-  footer { padding:2rem 1.5rem; flex-direction:column; text-align:center; }
-  .hero-title { letter-spacing:0.1em; }
-  .ale-stats { grid-template-columns:1fr 1fr; }
-  .ale-stats .stat-item:last-child { border-top:1px solid rgba(255,255,255,0.06); }
-  .cta-band { padding:3rem 1.5rem; }
-}
-</style>
+    @media (max-width: 1020px) {
+      .about-grid, .split-header, .book-panel, .contact-grid { grid-template-columns: 1fr; gap: 3.5rem; }
+      .service-item { grid-template-columns: 0.28fr 1fr; }
+      .service-desc { grid-column: 2 / -1; }
+      .service-arrow { display: none; }
+      .project-item { grid-template-columns: 1fr; gap: 0.55rem; }
+      .project-link { margin-top: 0.35rem; }
+      .visual-card { min-height: 420px; }
+    }
+    @media (max-width: 780px) {
+      body { cursor: auto; }
+      .cursor, .cursor-ring { display: none; }
+      nav { padding: 1.25rem 1.25rem; }
+      nav.scrolled { padding: 0.9rem 1.25rem; }
+      .nav-links { display: none; }
+      .nav-toggle { display: flex; }
+      .section { padding: 5.5rem 1.25rem; }
+      .hero-title { letter-spacing: 0.04em; }
+      .hero-actions, .book-actions, .cta-actions { flex-direction: column; align-items: stretch; }
+      .btn { width: 100%; }
+      .bio-points, .form-row { grid-template-columns: 1fr; }
+      .bio-point { border-right: 0; border-bottom: 1px solid var(--line); }
+      .bio-point:last-child { border-bottom: 0; }
+      .service-item { grid-template-columns: 1fr; gap: 0.65rem; }
+      .service-desc { grid-column: auto; }
+      .service-number { padding-top: 0; }
+      footer { padding: 2.4rem 1.25rem; flex-direction: column; text-align: center; }
+      .footer-links { flex-wrap: wrap; justify-content: center; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+    }
+  </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
 
-<!-- CURSOR -->
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <button class="mobile-close" onclick="closeMobile()" aria-label="Cerrar menú">✕</button>
-  <a href="#showreel" onclick="closeMobile()">Showreel</a>
-  <a href="#about" onclick="closeMobile()">Mimética</a>
-  <a href="#alejandro" onclick="closeMobile()">Alejandro</a>
-  <a href="#servicios" onclick="closeMobile()">Servicios</a>
-  <a href="#proyectos" onclick="closeMobile()">Proyectos</a>
-  <a href="#contacto" onclick="closeMobile()">Contacto</a>
-</div>
-
-<!-- NAV -->
-<nav id="mainNav">
-  <a href="#hero" class="nav-logo">Mimética</a>
-  <ul class="nav-links">
-    <li><a href="#showreel">Showreel</a></li>
-    <li><a href="#about">Mimética</a></li>
-    <li><a href="#alejandro">Alejandro</a></li>
-    <li><a href="#servicios">Servicios</a></li>
-    <li><a href="#proyectos">Proyectos</a></li>
-    <li><a href="#contacto" class="nav-cta">Hablemos</a></li>
-  </ul>
-  <button class="nav-toggle" onclick="openMobile()" aria-label="Abrir menú">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<!-- ================= HERO ================= -->
-<section id="hero">
-  <div class="hero-video-wrap">
-    <!--
-      INSTRUCCIÓN: Reemplaza el src del video con tu reel.
-      Puede ser un archivo local (reel.mp4) o un loop desde Vimeo con ?background=1&autoplay=1&loop=1&muted=1
-      Ejemplo Vimeo: https://player.vimeo.com/video/TU_ID?background=1&autoplay=1&loop=1&muted=1
-    -->
-    <video autoplay muted loop playsinline poster="">
-      <!-- <source src="reel.mp4" type="video/mp4"/> -->
-    </video>
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <button class="mobile-close" type="button" onclick="closeMobile()" aria-label="Cerrar menú">✕</button>
+    <a href="#manifesto" onclick="closeMobile()">Manifiesto</a>
+    <a href="#about" onclick="closeMobile()">Alejandro / Mimética</a>
+    <a href="#services" onclick="closeMobile()">Servicios</a>
+    <a href="#experience" onclick="closeMobile()">Trabajo</a>
+    <a href="#book" onclick="closeMobile()">Libro</a>
+    <a href="#contact" onclick="closeMobile()">Contacto</a>
   </div>
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <div class="hero-eyebrow">Santiago, Chile — Dirección Audiovisual</div>
-    <h1 class="hero-title">MIMÉTICA</h1>
-    <p class="hero-subtitle">Dirección Audiovisual Estratégica</p>
-    <p class="hero-tagline">
-      Creamos piezas visuales con intención narrativa,<br>
-      identidad estética y enfoque en percepción de marca.
-    </p>
-    <div class="hero-actions">
-      <a href="#proyectos" class="btn-outline">Ver proyectos</a>
-      <a href="#contacto" class="btn-accent">Hablemos →</a>
-    </div>
-  </div>
-  <div class="hero-scroll-hint">
-    <span>Explorar</span>
-    <div class="scroll-line"></div>
-  </div>
-</section>
 
-<!-- ================= SHOWREEL ================= -->
-<div id="showreel">
-  <div class="reel-wrap">
-    <div class="reel-label">
-      <div class="label">Showreel</div>
-      <span>2024 — 2025</span>
-    </div>
-    <div class="reel-player" id="reelPlayer">
-      <!--
-        INSTRUCCIÓN: Reemplaza con tu iframe de YouTube/Vimeo cuando tengas el link.
-        Ejemplo YouTube:
-        <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID?rel=0&color=white&modestbranding=1" allowfullscreen></iframe>
-        
-        Ejemplo Vimeo:
-        <iframe src="https://player.vimeo.com/video/TU_VIDEO_ID?title=0&byline=0&portrait=0&color=c8b99a" allowfullscreen></iframe>
-      -->
-      <div class="reel-placeholder" id="reelPlaceholder" onclick="loadReel()">
-        <div class="play-circle">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <polygon points="5,3 19,12 5,21"/>
-          </svg>
-        </div>
-        <p>Reproducir Showreel</p>
-      </div>
-    </div>
-  </div>
-</div>
+  <nav id="mainNav" aria-label="Navegación principal">
+    <a href="#hero" class="nav-logo" aria-label="Alejandro Ubal / Mimética">Mimética</a>
+    <ul class="nav-links">
+      <li><a href="#manifesto">Manifiesto</a></li>
+      <li><a href="#about">Identidad</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#experience">Trabajo</a></li>
+      <li><a href="#book">Libro</a></li>
+      <li><a href="#contact" class="nav-cta">Hablemos</a></li>
+    </ul>
+    <button class="nav-toggle" type="button" onclick="openMobile()" aria-label="Abrir menú" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+  </nav>
 
-<!-- ================= SOBRE MIMÉTICA ================= -->
-<section id="about" class="section">
-  <div class="section-inner">
-    <div class="about-grid">
-      <div class="about-image-col reveal">
-        <div class="about-img-frame">
-          <!--
-            INSTRUCCIÓN: Reemplaza con una imagen tuya o del estudio.
-            <img src="foto-estudio.jpg" alt="Mimética Estudio"/>
-          -->
-          <div style="width:100%;height:100%;background:linear-gradient(160deg,#1a1510,#0d0c0a);
-               display:flex;align-items:center;justify-content:center;">
-            <span style="font-family:var(--serif);font-size:4rem;color:rgba(200,185,154,0.12);
-                  letter-spacing:0.2em;">M</span>
-          </div>
-        </div>
-        <div class="about-img-caption">Mimética Estudio · Est. 2020</div>
-      </div>
-      <div class="about-text-col reveal">
-        <div class="label">Sobre Mimética</div>
-        <h2 class="section-title">Imágenes que<br>construyen<br><em>percepción</em></h2>
-        <p class="about-body">
-          Mimética nace desde la observación de cómo las imágenes construyen percepción,
-          identidad y emoción.
-          <br/><br/>
-          Cada proyecto se desarrolla desde una mirada estratégica y cinematográfica,
-          buscando transformar ideas en piezas visuales con intención real.
-          <br/><br/>
-          Más que producir contenido, Mimética busca generar lenguaje visual con impacto.
-        </p>
-        <blockquote class="about-quote">
-          "No solo grabamos videos:<br/>construimos percepción de marca."
-        </blockquote>
+  <header id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-fallback"></div>
+      <video autoplay muted loop playsinline poster="">
+        <!-- Reemplazar por reel propio: <source src="reel.mp4" type="video/mp4" /> -->
+      </video>
+      <div class="hero-gradient"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Dirección visual · estrategia · postproducción</p>
+      <h1 class="hero-title">Alejandro Ubal<br />/ Mimética</h1>
+      <p class="hero-subtitle">Dirección audiovisual estratégica para marcas, proyectos y personas que necesitan comunicar con intención.</p>
+      <p class="hero-tagline">Desarrollo videos, piezas visuales y contenido cinematográfico que construyen percepción, identidad y confianza.</p>
+      <div class="hero-actions" aria-label="Acciones principales">
+        <a class="btn" href="#experience">Ver trabajo</a>
+        <a class="btn btn-primary" href="#contact">Hablemos de tu proyecto</a>
       </div>
     </div>
-  </div>
-</section>
+    <div class="hero-scroll" aria-hidden="true">Explorar</div>
+  </header>
 
-<!-- ================= SOBRE ALEJANDRO ================= -->
-<section id="alejandro" class="section">
-  <div class="section-inner">
-    <div class="label reveal">El Realizador</div>
-    <div class="ale-grid">
-      <div class="ale-photo-wrap reveal">
-        <div class="ale-photo">
-          <!--
-            INSTRUCCIÓN: Reemplaza con tu foto personal.
-            <img src="alejandro.jpg" alt="Alejandro González Ubal"/>
-          -->
-          <div style="width:100%;height:100%;background:linear-gradient(160deg,#18140f,#0d0c0a);
-               display:flex;align-items:flex-end;padding:2rem;">
-            <div>
-              <div style="font-size:0.55rem;letter-spacing:0.3em;text-transform:uppercase;
-                   color:rgba(200,185,154,0.4);margin-bottom:0.5rem;">Foto aquí</div>
-              <div style="font-family:var(--serif);font-size:0.9rem;color:rgba(255,255,255,0.2);">
-                Alejandro González Ubal
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="ale-name">Alejandro González Ubal</div>
-        <div class="ale-role">Director Audiovisual & Fundador</div>
+  <main id="main">
+    <section id="manifesto" class="section" aria-labelledby="manifesto-title">
+      <div class="section-inner manifesto-box reveal">
+        <p class="section-kicker">Manifiesto</p>
+        <h2 class="section-title" id="manifesto-title">La imagen no solo muestra. También construye <em>percepción</em>.</h2>
+        <p class="lead manifesto-text">Mimética nace como una forma de unir oficio audiovisual, pensamiento comunicacional y estrategia visual para crear piezas que no solo se vean bien, sino que comuniquen con propósito.</p>
       </div>
-      <div class="ale-text">
-        <h2 class="section-title reveal">Más de una<br>década de<br><em>dirección visual</em></h2>
-        <p class="ale-body reveal">
-          Soy Alejandro González Ubal, comunicador audiovisual y realizador con más de
-          10 años de experiencia en publicidad, dirección visual y postproducción.
-          <br/><br/>
-          He trabajado desarrollando contenido para marcas, inmobiliarias y campañas
-          digitales, integrando estrategia, narrativa y estética cinematográfica en
-          cada pieza.
-          <br/><br/>
-          Mimética representa mi visión sobre la comunicación visual contemporánea:
-          crear imágenes con intención, identidad y valor perceptual.
-        </p>
-        <div class="ale-stats reveal">
-          <div class="stat-item">
-            <div class="stat-num">10+</div>
-            <div class="stat-label">Años de experiencia</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-num">80+</div>
-            <div class="stat-label">Proyectos realizados</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-num">30+</div>
-            <div class="stat-label">Marcas acompañadas</div>
-          </div>
-        </div>
-        <div class="ale-clients reveal">
-          <div class="ale-clients-label">Clientes destacados</div>
-          <div class="client-tags">
-            <span class="client-tag">Trayecta</span>
-            <span class="client-tag">Patagonland</span>
-            <span class="client-tag">Fundamenta</span>
-            <span class="client-tag">Urmeneta</span>
-            <span class="client-tag">Wrow</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ================= SERVICIOS ================= -->
-<section id="servicios" class="section">
-  <div class="section-inner">
-    <div class="servicios-header">
-      <div>
-        <div class="label reveal">Servicios</div>
-        <h2 class="section-title reveal">Especialización<br>sobre <em>cantidad</em></h2>
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="section-inner about-grid">
+        <div class="visual-card reveal" role="img" aria-label="Representación visual abstracta de Mimética">
+          <div class="visual-card-caption"><span>Mimética</span><span>Alejandro Ubal</span></div>
+        </div>
+        <div class="about-copy reveal">
+          <p class="section-kicker">Sobre Alejandro / Mimética</p>
+          <h2 class="section-title" id="about-title">Una mirada autoral con estructura <em>profesional</em>.</h2>
+          <p class="lead">Soy Alejandro González Ubal, comunicador audiovisual, director visual y postproductor. Durante más de una década he trabajado en publicidad, contenido digital, proyectos inmobiliarios, comunicación institucional y narrativa de marca.</p>
+          <p class="lead">Mimética es la casa creativa donde reúno mi experiencia, mi mirada sobre la comunicación y mi oficio audiovisual para ayudar a marcas y proyectos a verse, sentirse y comunicarse mejor.</p>
+          <div class="bio-points" aria-label="Resumen de experiencia">
+            <div class="bio-point"><div class="bio-num">10+</div><div class="bio-label">Años de oficio audiovisual</div></div>
+            <div class="bio-point"><div class="bio-num">360°</div><div class="bio-label">Dirección, cámara, edición y post</div></div>
+            <div class="bio-point"><div class="bio-num">1</div><div class="bio-label">Método visual integrado</div></div>
+          </div>
+        </div>
       </div>
-      <p class="servicios-intro reveal">
-        No ofrecemos todo para todos. Trabajamos en áreas específicas donde podemos
-        garantizar criterio cinematográfico, estrategia y resultado de alto nivel.
-      </p>
-    </div>
-    <div class="services-list">
-      <div class="service-item reveal">
-        <div>
-          <div class="service-num">01</div>
-          <div class="service-name">Dirección<br/>Audiovisual</div>
-        </div>
-        <div class="service-desc">
-          Producción de piezas visuales para campañas, marcas y comunicación digital.
-          Desde la concepción creativa hasta la entrega final, con mirada cinematográfica
-          y enfoque estratégico en cada etapa.
-        </div>
-        <div class="service-arrow">↗</div>
-      </div>
-      <div class="service-item reveal">
-        <div>
-          <div class="service-num">02</div>
-          <div class="service-name">Contenido<br/>Inmobiliario Premium</div>
-        </div>
-        <div class="service-desc">
-          Visuales cinematográficos para proyectos inmobiliarios y arquitectura.
-          Capturamos la atmósfera, el carácter y la percepción de valor de cada espacio
-          con criterio estético de alto nivel.
-        </div>
-        <div class="service-arrow">↗</div>
-      </div>
-      <div class="service-item reveal">
-        <div>
-          <div class="service-num">03</div>
-          <div class="service-name">Ads &<br/>Redes Sociales</div>
-        </div>
-        <div class="service-desc">
-          Contenido optimizado para campañas digitales y plataformas sociales.
-          Piezas con identidad estética real, pensadas para impactar y convertir
-          en Instagram, TikTok y YouTube.
-        </div>
-        <div class="service-arrow">↗</div>
-      </div>
-      <div class="service-item reveal">
-        <div>
-          <div class="service-num">04</div>
-          <div class="service-name">Postproducción<br/>& Motion</div>
-        </div>
-        <div class="service-desc">
-          Edición, narrativa visual, color grading cinematográfico y motion graphics.
-          Llevamos el material al siguiente nivel con criterio estético y dominio
-          técnico de postproducción.
-        </div>
-        <div class="service-arrow">↗</div>
-      </div>
-      <div class="service-item reveal">
-        <div>
-          <div class="service-num">05</div>
-          <div class="service-name">Storytelling<br/>Visual</div>
-        </div>
-        <div class="service-desc">
-          Construcción narrativa para marcas y proyectos con identidad. Desarrollamos
-          el lenguaje visual que comunica quiénes son, qué proponen y cómo quieren
-          ser percibidos.
-        </div>
-        <div class="service-arrow">↗</div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ================= PROYECTOS ================= -->
-<section id="proyectos" class="section">
-  <div class="section-inner">
-    <div class="projects-header">
-      <div>
-        <div class="label reveal">Proyectos Destacados</div>
-        <h2 class="section-title reveal">Trabajo <em>real</em><br/>con marcas reales</h2>
-      </div>
-      <a href="#contacto" class="btn-outline reveal" style="align-self:flex-end;">Ver todos →</a>
-    </div>
-    <div class="projects-grid reveal">
-      <div class="project-row wide">
-        <div class="project-card wide">
-          <div class="proj-bg proj-p1">
-            <!--
-              INSTRUCCIÓN: Agrega imagen/video de fondo del proyecto aquí.
-              Ejemplo: <img src="trayecta.jpg" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"/>
-            -->
-            <div class="proj-placeholder-text">
-              <div class="proj-placeholder-icon">🎬</div>
-              <div>Imagen / Video del proyecto</div>
-            </div>
+    <section id="services" class="section" aria-labelledby="services-title">
+      <div class="section-inner">
+        <div class="split-header">
+          <div>
+            <p class="section-kicker reveal">Servicios</p>
+            <h2 class="section-title reveal" id="services-title">Piezas visuales con dirección, criterio y <em>objetivo</em>.</h2>
           </div>
-          <div class="proj-overlay"></div>
-          <div class="proj-info">
-            <div class="proj-client">Trayecta</div>
-            <div class="proj-title">Campaña Inmobiliaria</div>
-            <div class="proj-type">Dirección audiovisual · 2024</div>
-          </div>
+          <p class="lead reveal">Trabajo proyectos donde la estética necesita responder a una intención: posicionar, vender, explicar, generar confianza o construir una percepción más clara de marca.</p>
         </div>
-        <div class="project-card tall">
-          <div class="proj-bg proj-p2">
-            <div class="proj-placeholder-text">
-              <div class="proj-placeholder-icon">📸</div>
-              <div>Imagen / Video</div>
-            </div>
-          </div>
-          <div class="proj-overlay"></div>
-          <div class="proj-info">
-            <div class="proj-client">Patagonland</div>
-            <div class="proj-title">Narrativa Visual de Marca</div>
-            <div class="proj-type">Storytelling · 2024</div>
-          </div>
+        <div class="service-list">
+          <article class="service-item reveal">
+            <span class="service-number">01</span>
+            <h3 class="service-name">Videos estratégicos para marcas</h3>
+            <p class="service-desc">Desarrollo de piezas audiovisuales para campañas, lanzamientos, presentaciones y comunicación digital, integrando narrativa, dirección visual y ejecución técnica.</p>
+            <span class="service-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="service-item reveal">
+            <span class="service-number">02</span>
+            <h3 class="service-name">Contenido inmobiliario premium</h3>
+            <p class="service-desc">Videos para arquitectura, proyectos inmobiliarios y espacios de alto valor, con foco en atmósfera, recorrido, detalle y percepción de confianza.</p>
+            <span class="service-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="service-item reveal">
+            <span class="service-number">03</span>
+            <h3 class="service-name">Ads y contenido para redes</h3>
+            <p class="service-desc">Reels, cápsulas, anuncios y contenidos verticales pensados para campañas digitales sin perder identidad, claridad ni calidad visual.</p>
+            <span class="service-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="service-item reveal">
+            <span class="service-number">04</span>
+            <h3 class="service-name">Postproducción y narrativa visual</h3>
+            <p class="service-desc">Edición, montaje narrativo, color, ritmo, estructura, limpieza visual y acabado final para piezas que necesitan elevar su percepción profesional.</p>
+            <span class="service-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="service-item reveal">
+            <span class="service-number">05</span>
+            <h3 class="service-name">Asesorías audiovisuales</h3>
+            <p class="service-desc">Acompañamiento estratégico para ordenar ideas, definir lenguaje visual, mejorar contenido existente o planificar una producción con mayor intención comunicacional.</p>
+            <span class="service-arrow" aria-hidden="true">↗</span>
+          </article>
         </div>
       </div>
-      <div class="project-row">
-        <div class="project-card sq">
-          <div class="proj-bg proj-p3">
-            <div class="proj-placeholder-text">
-              <div class="proj-placeholder-icon">🏗</div>
-              <div>Imagen / Video</div>
-            </div>
-          </div>
-          <div class="proj-overlay"></div>
-          <div class="proj-info">
-            <div class="proj-client">Fundamenta</div>
-            <div class="proj-title">Contenido Premium</div>
-            <div class="proj-type">Video inmobiliario · 2023</div>
-          </div>
-        </div>
-        <div class="project-card sq">
-          <div class="proj-bg proj-p4">
-            <div class="proj-placeholder-text">
-              <div class="proj-placeholder-icon">✨</div>
-              <div>Imagen / Video</div>
-            </div>
-          </div>
-          <div class="proj-overlay"></div>
-          <div class="proj-info">
-            <div class="proj-client">Urmeneta</div>
-            <div class="proj-title">Ads & Social Media</div>
-            <div class="proj-type">Campañas digitales · 2024</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ================= FILOSOFÍA ================= -->
-<section id="filosofia" class="section">
-  <div class="section-inner">
-    <div class="filo-inner">
-      <div class="label reveal" style="justify-content:center;padding-left:0;">
-        <span style="display:none;"></span>Filosofía Visual
-      </div>
-      <p class="filo-main reveal">
-        La imagen no solo muestra.<br/>
-        También comunica <em>posición</em>,<br/>
-        percepción y <em>emoción</em>.
-      </p>
-      <p class="filo-sub reveal">
-        Cada encuadre, movimiento y atmósfera construye una experiencia visual
-        capaz de influir en cómo una marca es interpretada.
-        Eso es lo que nos mueve: crear imágenes con intención real.
-      </p>
-    </div>
-  </div>
-</section>
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="section-inner">
+        <div class="split-header">
+          <div>
+            <p class="section-kicker reveal">Experiencia aplicada</p>
+            <h2 class="section-title reveal" id="experience-title">Áreas donde la mirada audiovisual se vuelve <em>valor</em>.</h2>
+          </div>
+          <div class="experience-tags reveal" aria-label="Áreas de experiencia">
+            <span class="tag">Inmobiliaria premium</span>
+            <span class="tag">Publicidad digital</span>
+            <span class="tag">Campañas de marca</span>
+            <span class="tag">Contenido institucional</span>
+            <span class="tag">Storytelling visual</span>
+            <span class="tag">Postproducción publicitaria</span>
+            <span class="tag">Reels y ads</span>
+            <span class="tag">Comunicación estratégica</span>
+          </div>
+        </div>
 
-<!-- ================= CONTACTO ================= -->
-<section id="contacto" class="section">
-  <div class="section-inner">
-    <div class="contact-grid">
-      <div class="contact-left">
-        <div class="label reveal">Contacto</div>
-        <h2 class="reveal">Hablemos de<br/>tu próximo<br/><em>proyecto</em></h2>
-        <div class="contact-channels reveal">
-          <a href="mailto:mimetica.estudio@gmail.com" class="channel-item">
-            <div>
-              <div class="channel-name">Correo</div>
-              <div class="channel-val">mimetica.estudio@gmail.com</div>
-            </div>
-            <div class="channel-arrow">↗</div>
+        <p class="portfolio-note reveal">Selección de proyectos donde he participado desde distintos roles: dirección audiovisual, cámara, edición, postproducción, desarrollo narrativo y ejecución visual. Algunos trabajos fueron realizados en colaboración con agencias, empresas o equipos de comunicación.</p>
+
+        <div class="project-list reveal" aria-label="Selección de proyectos">
+          <a class="project-item" href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">
+            <h3 class="project-name">Campaña inmobiliaria premium</h3>
+            <p class="project-meta">Video de marca / recorrido visual</p>
+            <p class="project-role">Rol: dirección audiovisual, cámara y edición</p>
+            <p class="project-year">2024</p>
+            <span class="project-link">Behance ↗</span>
           </a>
-          <a href="https://wa.me/56912345678" target="_blank" class="channel-item">
-            <!--
-              INSTRUCCIÓN: Reemplaza el número de WhatsApp en el href arriba.
-              Formato: https://wa.me/56[tu número sin espacios]
-            -->
-            <div>
-              <div class="channel-name">WhatsApp</div>
-              <div class="channel-val">+56 9 XXXX XXXX</div>
-            </div>
-            <div class="channel-arrow">↗</div>
+          <a class="project-item" href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">
+            <h3 class="project-name">Publicidad digital para lanzamiento</h3>
+            <p class="project-meta">Ads / piezas para redes</p>
+            <p class="project-role">Rol: montaje, postproducción y narrativa visual</p>
+            <p class="project-year">2024</p>
+            <span class="project-link">Behance ↗</span>
           </a>
-          <a href="https://www.instagram.com/mimeticaestudio/" target="_blank" class="channel-item">
-            <div>
-              <div class="channel-name">Instagram</div>
-              <div class="channel-val">@mimeticaestudio</div>
-            </div>
-            <div class="channel-arrow">↗</div>
+          <a class="project-item" href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">
+            <h3 class="project-name">Contenido institucional</h3>
+            <p class="project-meta">Cápsula audiovisual / comunicación interna</p>
+            <p class="project-role">Rol: dirección visual, entrevista y edición</p>
+            <p class="project-year">2023</p>
+            <span class="project-link">Behance ↗</span>
           </a>
-          <a href="https://www.youtube.com/channel/UCSYuVGH68GfwM1LZV9vlPxA" target="_blank" class="channel-item">
-            <div>
-              <div class="channel-name">YouTube</div>
-              <div class="channel-val">Mimética Estudio</div>
-            </div>
-            <div class="channel-arrow">↗</div>
+          <a class="project-item" href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">
+            <h3 class="project-name">Storytelling visual de marca</h3>
+            <p class="project-meta">Pieza narrativa / campaña digital</p>
+            <p class="project-role">Rol: desarrollo narrativo, edición y acabado</p>
+            <p class="project-year">2023</p>
+            <span class="project-link">Behance ↗</span>
+          </a>
+          <a class="project-item" href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">
+            <h3 class="project-name">Postproducción publicitaria</h3>
+            <p class="project-meta">Edición / color / adaptación de formatos</p>
+            <p class="project-role">Rol: postproducción, ritmo y versiones para pauta</p>
+            <p class="project-year">2022</p>
+            <span class="project-link">Behance ↗</span>
           </a>
         </div>
       </div>
-      <div class="contact-form reveal">
-        <form id="contactForm" onsubmit="handleSubmit(event)">
-          <div class="form-group">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required/>
+    </section>
+
+    <section id="book" class="section" aria-labelledby="book-title">
+      <div class="section-inner book-panel reveal">
+        <div class="book-cover" aria-label="El Poder de la Comunicación">
+          <small>Alejandro González Ubal</small>
+          <strong>El Poder<br />de la<br />Comunicación</strong>
+          <small>Narrativa · percepción · medios · identidad</small>
+        </div>
+        <div>
+          <p class="section-kicker">Libro / investigación</p>
+          <h2 class="section-title" id="book-title">Comunicación, imagen y pensamiento <em>crítico</em>.</h2>
+          <p class="lead" style="margin-top: 2rem;">Además de producir imágenes, investigo cómo la comunicación influye en la forma en que pensamos, decidimos y percibimos la realidad. Mi libro <em>El Poder de la Comunicación</em> reúne esa mirada crítica y educativa sobre narrativa, percepción, manipulación, medios e identidad.</p>
+          <div class="book-actions">
+            <a class="btn btn-primary" href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer">Ver libro en Amazon</a>
+            <a class="btn" href="https://www.youtube.com/channel/UCSYuVGH68GfwM1LZV9vlPxA" target="_blank" rel="noopener noreferrer">Ver contenido educativo</a>
+            <a class="btn btn-link" href="#contact">Apoyar investigación visual</a>
           </div>
-          <div class="form-group">
-            <label for="empresa">Empresa / Marca</label>
-            <input type="text" id="empresa" name="empresa" placeholder="Tu empresa (opcional)"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="section-inner contact-grid">
+        <div class="reveal">
+          <p class="section-kicker">Contacto</p>
+          <h2 class="section-title" id="contact-title">Cuéntame qué necesitas comunicar y vemos cómo darle <em>forma</em>.</h2>
+          <p class="lead" style="margin-top: 2rem;">El objetivo es entender tu proyecto, el contexto y la pieza que puede generar más valor antes de hablar de cámaras, formatos o producción.</p>
+          <div class="contact-channels">
+            <a class="channel" href="mailto:mimetica.estudio@gmail.com"><span><small>Correo</small>mimetica.estudio@gmail.com</span><span aria-hidden="true">↗</span></a>
+            <a class="channel" href="https://wa.me/56912345678" target="_blank" rel="noopener noreferrer"><span><small>WhatsApp</small>+56 9 1234 5678</span><span aria-hidden="true">↗</span></a>
+            <a class="channel" href="https://www.instagram.com/mimeticaestudio/" target="_blank" rel="noopener noreferrer"><span><small>Instagram</small>@mimeticaestudio</span><span aria-hidden="true">↗</span></a>
+            <a class="channel" href="https://www.youtube.com/channel/UCSYuVGH68GfwM1LZV9vlPxA" target="_blank" rel="noopener noreferrer"><span><small>YouTube</small>Mimética Estudio</span><span aria-hidden="true">↗</span></a>
           </div>
-          <div class="form-group">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="tu@correo.com" required/>
+        </div>
+
+        <form class="contact-form reveal" id="leadForm" data-integration="Supabase / Airtable / Google Sheets / Formspree / backend propio" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="correo">Correo</label>
+              <input id="correo" name="correo" type="email" placeholder="tu@correo.com" autocomplete="email" required />
+            </div>
           </div>
-          <div class="form-group">
-            <label for="servicio">Servicio de interés</label>
-            <select id="servicio" name="servicio">
-              <option value="">Selecciona un servicio</option>
-              <option>Dirección Audiovisual</option>
-              <option>Contenido Inmobiliario Premium</option>
-              <option>Ads & Redes Sociales</option>
-              <option>Postproducción & Motion</option>
-              <option>Storytelling Visual</option>
-              <option>Otro</option>
-            </select>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="whatsapp">WhatsApp</label>
+              <input id="whatsapp" name="whatsapp" type="tel" placeholder="+56 9..." autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="empresa">Empresa o proyecto</label>
+              <input id="empresa" name="empresa" type="text" placeholder="Marca, empresa o idea" autocomplete="organization" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="servicio">Tipo de servicio</label>
+              <select id="servicio" name="servicio" required>
+                <option value="">Selecciona una opción</option>
+                <option>Videos estratégicos para marcas</option>
+                <option>Contenido inmobiliario premium</option>
+                <option>Ads y contenido para redes</option>
+                <option>Postproducción y narrativa visual</option>
+                <option>Asesorías audiovisuales</option>
+                <option>Otro / aún no lo tengo claro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="presupuesto">Presupuesto estimado</label>
+              <select id="presupuesto" name="presupuesto">
+                <option value="">Selecciona un rango</option>
+                <option>Menos de USD 500</option>
+                <option>USD 500 – 1.500</option>
+                <option>USD 1.500 – 3.000</option>
+                <option>USD 3.000 – 6.000</option>
+                <option>Más de USD 6.000</option>
+                <option>Prefiero conversarlo</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fecha">Fecha ideal</label>
+              <input id="fecha" name="fecha_ideal" type="text" placeholder="Ej: junio / próxima semana / flexible" />
+            </div>
+            <div class="form-group">
+              <label for="origen">Cómo llegaste aquí</label>
+              <select id="origen" name="origen">
+                <option value="">Selecciona una opción</option>
+                <option>Instagram</option>
+                <option>YouTube</option>
+                <option>Behance</option>
+                <option>Google</option>
+                <option>Recomendación</option>
+                <option>Otro</option>
+              </select>
+            </div>
           </div>
           <div class="form-group">
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntame qué necesitas, qué quieres comunicar y en qué etapa está el proyecto." required></textarea>
           </div>
-          <button type="submit" class="btn-submit">Enviar mensaje</button>
-          <p class="form-note" id="formNote"></p>
+          <input type="hidden" name="source" value="mimetica_web" />
+          <button class="btn btn-primary" type="submit">Enviar proyecto</button>
+          <p class="form-footnote">Formulario preparado para conexión futura con Supabase, Airtable, Google Sheets, Formspree o backend propio. Actualmente deja los datos listos para integrar el endpoint elegido.</p>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
         </form>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-logo">Mimética</div>
-  <div class="footer-copy">© 2025 Mimética Estudio · Santiago, Chile</div>
-  <ul class="footer-links">
-    <li><a href="https://www.instagram.com/mimeticaestudio/" target="_blank">Instagram</a></li>
-    <li><a href="https://www.youtube.com/channel/UCSYuVGH68GfwM1LZV9vlPxA" target="_blank">YouTube</a></li>
-    <li><a href="mailto:mimetica.estudio@gmail.com">Correo</a></li>
-  </ul>
-</footer>
+    <section id="final-cta" class="section" aria-labelledby="cta-title">
+      <div class="cta-inner reveal">
+        <p class="section-kicker" style="justify-content:center;"><span class="sr-only">Cierre</span></p>
+        <h2 class="section-title" id="cta-title">Si tienes una marca, proyecto o idea que necesita verse mejor, conversemos.</h2>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="#contact">Agendar proyecto</a>
+          <a class="btn" href="#experience">Ver portafolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<!-- ============================================
-   JAVASCRIPT
-   ============================================ -->
-<script>
-/* --- CURSOR --- */
-const cursor    = document.getElementById('cursor');
-const cursorRing= document.getElementById('cursorRing');
-let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove', e=>{
-  mx=e.clientX; my=e.clientY;
-  cursor.style.left=mx+'px'; cursor.style.top=my+'px';
-});
-function animRing(){
-  rx+=(mx-rx)*0.12; ry+=(my-ry)*0.12;
-  cursorRing.style.left=rx+'px'; cursorRing.style.top=ry+'px';
-  requestAnimationFrame(animRing);
-}
-animRing();
-document.querySelectorAll('a,button,.project-card,.service-item,.channel-item').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{
-    cursor.style.width='14px'; cursor.style.height='14px';
-    cursorRing.style.width='52px'; cursorRing.style.height='52px';
-    cursorRing.style.borderColor='rgba(200,185,154,0.6)';
-  });
-  el.addEventListener('mouseleave',()=>{
-    cursor.style.width='8px'; cursor.style.height='8px';
-    cursorRing.style.width='36px'; cursorRing.style.height='36px';
-    cursorRing.style.borderColor='rgba(255,255,255,0.35)';
-  });
-});
+  <footer>
+    <div class="footer-logo">Alejandro Ubal / Mimética</div>
+    <div class="footer-copy">© 2026 Mimética · Dirección audiovisual estratégica</div>
+    <ul class="footer-links">
+      <li><a href="https://www.instagram.com/mimeticaestudio/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+      <li><a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Behance</a></li>
+      <li><a href="mailto:mimetica.estudio@gmail.com">Correo</a></li>
+    </ul>
+  </footer>
 
-/* --- NAV SCROLL --- */
-const nav = document.getElementById('mainNav');
-window.addEventListener('scroll',()=>{
-  nav.classList.toggle('scrolled', window.scrollY > 60);
-});
+  <script>
+    const cursor = document.getElementById('cursor');
+    const cursorRing = document.getElementById('cursorRing');
+    let mouseX = 0;
+    let mouseY = 0;
+    let ringX = 0;
+    let ringY = 0;
 
-/* --- SCROLL REVEAL --- */
-const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.classList.add('visible');
-      observer.unobserve(e.target);
+    if (window.matchMedia('(pointer: fine)').matches) {
+      document.addEventListener('mousemove', (event) => {
+        mouseX = event.clientX;
+        mouseY = event.clientY;
+        cursor.style.left = `${mouseX}px`;
+        cursor.style.top = `${mouseY}px`;
+      });
+
+      function animateCursor() {
+        ringX += (mouseX - ringX) * 0.12;
+        ringY += (mouseY - ringY) * 0.12;
+        cursorRing.style.left = `${ringX}px`;
+        cursorRing.style.top = `${ringY}px`;
+        requestAnimationFrame(animateCursor);
+      }
+      animateCursor();
+
+      document.querySelectorAll('a, button, input, select, textarea, .service-item, .project-item').forEach((element) => {
+        element.addEventListener('mouseenter', () => {
+          cursor.style.width = '14px';
+          cursor.style.height = '14px';
+          cursorRing.style.width = '52px';
+          cursorRing.style.height = '52px';
+          cursorRing.style.borderColor = 'rgba(200,185,154,0.62)';
+        });
+        element.addEventListener('mouseleave', () => {
+          cursor.style.width = '8px';
+          cursor.style.height = '8px';
+          cursorRing.style.width = '36px';
+          cursorRing.style.height = '36px';
+          cursorRing.style.borderColor = 'rgba(255,255,255,0.34)';
+        });
+      });
     }
-  });
-},{threshold:0.12});
-reveals.forEach(el=>observer.observe(el));
 
-/* --- MOBILE MENU --- */
-function openMobile(){ document.getElementById('mobileMenu').classList.add('open'); document.body.style.overflow='hidden'; }
-function closeMobile(){ document.getElementById('mobileMenu').classList.remove('open'); document.body.style.overflow=''; }
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
 
-/* --- SHOWREEL --- */
-function loadReel(){
-  const player = document.getElementById('reelPlayer');
-  /*
-    INSTRUCCIÓN: Reemplaza con tu URL de YouTube o Vimeo embed.
-    YouTube: https://www.youtube.com/embed/TU_VIDEO_ID?autoplay=1&rel=0&color=white
-    Vimeo:   https://player.vimeo.com/video/TU_VIDEO_ID?autoplay=1&title=0&byline=0
-  */
-  const videoUrl = 'https://www.youtube.com/embed/EMJaT6pqgGw?autoplay=1&rel=0&color=white&modestbranding=1';
-  player.innerHTML = '<iframe src="'+videoUrl+'" allowfullscreen allow="autoplay"></iframe>';
-}
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 
-/* --- FORM --- */
-function handleSubmit(e){
-  e.preventDefault();
-  const note = document.getElementById('formNote');
-  const btn  = e.target.querySelector('.btn-submit');
-  btn.textContent='Enviando...';
-  btn.disabled=true;
-  /*
-    INSTRUCCIÓN: Conecta con Formspree, EmailJS o tu backend.
-    Reemplaza TU_ID con tu ID de Formspree: https://formspree.io/
-    
-    fetch('https://formspree.io/f/TU_ID', {
-      method:'POST',
-      body: new FormData(e.target),
-      headers:{'Accept':'application/json'}
-    }).then(r=>{ ... }).catch(...)
-  */
-  setTimeout(()=>{
-    note.textContent='Mensaje enviado. Te responderé pronto.';
-    note.style.color='var(--accent)';
-    btn.textContent='Enviado ✓';
-    e.target.reset();
-  },1200);
-}
-</script>
+    function openMobile() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.add('open');
+      menu.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobile() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.remove('open');
+      menu.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    async function handleSubmit(event) {
+      event.preventDefault();
+      const form = event.currentTarget;
+      const button = form.querySelector('button[type="submit"]');
+      const note = document.getElementById('formNote');
+      const formData = new FormData(form);
+      const payload = Object.fromEntries(formData.entries());
+
+      button.disabled = true;
+      button.textContent = 'Preparando envío...';
+      note.textContent = '';
+
+      /*
+        Integración futura:
+        - Supabase: await supabase.from('leads').insert(payload)
+        - Airtable / Google Sheets / backend: fetch('TU_ENDPOINT', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
+        - Formspree: fetch('https://formspree.io/f/TU_ID', { method: 'POST', body: formData, headers: { Accept: 'application/json' } })
+      */
+      console.info('Lead Mimética preparado para integración:', payload);
+
+      window.setTimeout(() => {
+        note.textContent = 'Gracias. Tu información quedó preparada para envío; conecta el endpoint elegido para activar la recepción automática.';
+        button.disabled = false;
+        button.textContent = 'Enviar proyecto';
+        form.reset();
+      }, 700);
+    }
+  </script>
 </body>
 </html>
